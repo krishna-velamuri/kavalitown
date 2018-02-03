@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Local Guide</title>
+</head>
+<body>
+    <div class="content">
+        <ul class="column">
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #bf2474;">
+                    <a href="#">
+                        <img src="images/news.jpg" alt="Kavali News" />
+                    </a>
+                    <h4>
+                        Kavali News
+                    </h4>
+                    <marquee direction="up" scrollamount="2" height="150px" onMouseOver="stop();" onMouseOut="start();"
+                             class="news">
+
+                        <p><a href="#/news?NewsId=4">కావలిలో కలకలం.</a></p>
+                        <p><a href="#/news?NewsId=12">ఆర్టిసి డిపోలో స్వచ్చభారత్.</a></p>
+                        <p><a href="#/news?NewsId=13">పూడిక తీయరు...నీరు పారదు.</a></p>
+                        <p><a href="#/news?NewsId=14">అనుపమ.</a></p>
+                        <p><a href="#/news">కావలిలో జగన్ జన్మదిన వేడుకులు..</a></p>
+                    </marquee>
+                </div>
+            </li>
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #23af1c;">
+                    <a href="#">
+                        <img src="images/guide.jpg" alt="Kavali Guide" />
+                    </a>
+                    <h4>
+                        Local Guide
+                    </h4>
+                    <b>Help Line:</b> &nbsp;
+                    <a href="#/Guide?hospitals">Hospitals</a>,
+                    <!--<a href="LocalGuide/Guide.html?blood.html">Blood banks</a>,
+                    <a href="#/Guide?fire-stations">Fire</a>,-->
+                    <!--<a href="LocalGuide/Guide.html?police.html">Police</a>, -->
+                    <a href="#/Guide?train-timings">Railway</a>,
+                    <a href="#/Guide?bus-timings">Bus</a>...etc<br />
+                    <b>Shopping:</b> &nbsp;
+                    <a href="#/Guide?provisions">Groceries</a>,
+                    <a href="#/Guide?jewellery">Jewellery</a>,
+                    <a href="#/Guide?books">Books</a>,
+                    <a href="#/Guide?electronics">Electronics</a>,
+                    <a href="#/Guide?furniture">Furniture</a>,
+                    <a href="#/Guide?electricals">Electricals</a>...etc<br />
+                    <b>Education:</b> &nbsp;
+                    <a href="#/Guide?schools">Schools</a>,
+                    <a href="#/Guide?inter-colleges">Inter</a>,
+                    <a href="#/Guide?degree-colleges">Degre</a>,
+                    <a href="#/Guide?pg-colleges">P.G</a>,
+                    <a href="#/Guide?engineering-colleges">Engineering</a>,
+                    <a href="#/Guide?mca-mba-colleges">MCA/MBA</a>...etc<br />
+                    <b>Finance:</b> &nbsp;
+                    <a href="#/Guide?banks">Banks</a>,
+                    <a href="#/Guide?finance">Finance</a>,
+                    <a href="#/Guide?chit-fund">Chit</a>....etc<br />
+                    <span class="alignright">
+                        <a href="#/Guide">
+                            More...
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #bf3a24;">
+                    <a href="#">
+                        <img src="images/real.jpg" alt="Realestate" />
+                    </a>
+                    <h4>
+                        Real Estate
+                    </h4>
+                    <b>Apartments:</b> &nbsp;
+                    <a href="#/realestate?buysale" ng-click="GetTitle('Flats','Sale');">Post Flats</a>,
+                    <a href="#/realestate?search" ng-click="GetTitle('Flats','Search');">Serach Flats</a>,
+                    <a href="#/realestate?builders">Builders</a>,
+                    <a href="#/realestate?prices_apt">Prices</a>, Tips...etc<br />
+                    <b>Ind. House:</b> &nbsp;
+                    <a href="#/realestate?buysale" ng-click="GetTitle('Houses', 'Sale');">Sale House</a>,
+                    <a href="#/realestate?search" ng-click="GetTitle('Houses','Search');">Serach</a>..etc<br />
+                    <b>Plots:</b> &nbsp;
+                    <a href="#/realestate?buysale" ng-click="GetTitle('Plots', 'Sale');">Sale</a>,
+                    <a href="#/realestate?search" ng-click="GetTitle('Plots','Search');">Search</a>,
+                    <a href="#/realestate?plot-venture">Ventures</a>,
+                    <a href="#/realestate?prices_plt">Prices</a>...etc<br />
+                    <b>Hardware</b>&nbsp;
+                    <a href="">Prices</a>,
+                    <a href="">Do's</a>,
+                    <a href="">Do not's</a><br />
+                    <b>Registration:</b>&nbsp;
+                    <a href="#/realestate?registration-fee">Reg. Fees</a>,
+                    <a href="#/realestate?land-value">Land Value</a>,
+                    Tips<br />
+                    <span class="alignright"><a href="#/realestate">More...</a></span>
+                </div>
+            </li>
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #8d3d6c;">
+                    <a href="#">
+                        <img src="images/place.jpg" alt="Places in kavali" />
+                    </a>
+                    <h4>
+                        Places
+                    </h4>
+                    <b>Beaches:</b> &nbsp;
+                    <a href="#/places#kavali-beach">Kavali</a>,
+                    <a href="#/places#lighthouse">Ramayapatnam</a><br />
+                    <b>Historical:</b>&nbsp;
+                    <a href="#/places#udayagiri-fort">Udayagiri</a>, Mallam<br />
+                    <b>Temples:</b> &nbsp;
+                    <a href="#/places#kavali-kalugolamma">Kalugolamma</a>,
+                    <a href="#/places#astalakshmi-temple">Astalakshmi</a>,
+                    <a href="#/places#rudrapadha-kshetram">Sivalayam</a>,
+					<a href="#/places#mundara-pottemma">Mundara Pottemma</a>...etc<br />
+                    <b>Tanks:</b>&nbsp;
+                    <a href="#/places#summer-storage">SS tank</a>,
+                    <a href="#/places#kavali-tank">Kavali Cheruvu</a>...etc<br />
+                    <b>Parks:</b>&nbsp;
+                    <a href="#/places#vengala-park">Vengalarao nagar park</a>....etc<br />
+                    <span class="alignright"><a href="#/places">More...</a></span>
+                </div>
+            </li>
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #b8d111;">
+                    <a href="#">
+                        <img src="images/job.jpg" alt="Jobs" />
+                    </a>
+                    <h4>
+                        Notifications
+                    </h4>
+                    <table style="font: 85% Arial, Helvetica, sans-serif;line-height:1.7;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <a href="#/notifications#no1">R.R.B Chennai</a>
+                            </td>
+                            <td>
+                                25/12/2011
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#/notifications#no2">SBI Probationary</a>
+                            </td>
+                            <td>
+                                15/11/2011
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#/notifications#no3">V.R.O's [A.P]</a>
+                            </td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#/notifications#no4">Group II [A.P.P.S.C]</a>
+                            </td>
+                            <td>
+                                03/12/2011
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#/notifications#no5">LIC [Agents]</a>
+                            </td>
+                            <td>
+                                10/11/2011
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="notifications.html#no6">SBI [Software]</a>
+                            </td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                    </table>
+                    <span class="alignright"><a href="#/notifications">More...</a> </span>
+                </div>
+            </li>
+            <!--eqblock-->
+            <li>
+                <div class="block" style="background: #1182d1;">
+                    <a href="#">
+                        <img src="images/doc.jpg" alt="Documents" />
+                    </a>
+                    <h4>
+                        Documents
+                    </h4>
+                    <a href="#/documents?birth.pdf">Birtrh Certificate&nbsp;[Form5]</a><br />
+                    <a href="#/documents?casteandres.pdf">Caste Certificate&nbsp;[Form]</a><br />
+                    <a href="#/documents?death.pdf">Death Certificate&nbsp; [Form7]</a><br />
+                    <a href="#/documents?marriage.pdf">Marriage Certificate&nbsp; [Form]</a><br />
+                    <a href="#/documents?driving-licence.pdf">Driving License&nbsp; [Form4]</a><br />
+                    <a href="#/documents?namechange.pdf">Name Change Form &nbsp;[Form]</a><br />
+                    <span class="alignright"><a href="#/documents">More...</a></span>
+                </div>
+            </li>
+            <li>
+                <div class="block" style="background: #009a49;">
+                    <a href="#">
+                        <img src="images/trend.jpg" alt="Style and Trends" />
+                    </a>
+                    <h4>
+                        Style/Trends
+                    </h4>
+                    <b>Dresses:</b> &nbsp;
+                    <a href="#/trends?leggings">Leggings</a>,
+                    <a href="#/trends?jeggings">Jeggings</a>...etc
+                    <b>Accessories:</b>&nbsp;
+                    <a href="#/trends?handbag-gallery">Bags</a>,
+                    <a href="#/trends?watches">Watches</a>,
+                    <a href="#/trends?eyegear-gallery">Eyegear</a>, Scarfs, Sandles, Footwear...etc<br />
+                    <b>Beauty Tips:</b>&nbsp;<a href="#/trends?hair-nails">Hair</a>, <a href="#/trends?hair-nails">Nails</a>,
+                    <a href="#/trends?eyes-face">Eyes</a>, Lips...etc
+                    <b>Health:</b>&nbsp;Home Remidies, <a href="#/trends?good-food">Good Food</a>, 
+					<a href="#/trends?calories">Calories</a>, Workouts, 
+					<a href="#/trends?diet-plans">Diet Plans</a>...etc<br />
+					<span class="alignright"><a href="#/trends">More...</a></span>
+				</div>
+            </li>
+            <li>
+                <div class="block" style="background: #cf0360;">
+                    <a href="#">
+                        <img src="images/kitchen1.jpg" alt="Recipes" />
+                    </a>
+                    <h4>
+                        Kitchen
+                    </h4>
+                    <b>Breakfast: </b>
+                    <a href="#/kitchen?Bonda">Bonda</a>,
+                    <a href="#/kitchen?Kichidi">Kichidi</a>,
+                    <a href="#/kitchen?Pongal">Pongal</a>...etc<br />
+                    <b>Curries: </b>
+                    <a href="#/kitchen?Shabnam">Shabnam</a>,<a href="#/kitchen?PalakMakai">Palak Makai</a>,
+                    <a href="#/kitchen?PaneerMakhani">Paneer Makhani</a>,
+                    <a href="#/kitchen?KadhiPakora">Kadhi Pokara</a>,
+                    <a href="#/kitchen?ButterChicken">Butter Chicken</a>,
+                    <a href="#/kitchen?BengaliFish">Bengali fish</a>, <a href="">Chicken 65</a>...etc<br />
+                    <b>Snacks:</b> <a href="#/kitchen?PavBhaji">Pav bhaji</a>, <a href="#/kitchen?AlooTikki">
+                        Aloo Tikki
+                    </a>, <a href="#/kitchen?CornUpma">Corn Upma</a>, <a href="#/kitchen?KhamanDhokla">
+                        Khaman Dhokla
+                    </a>...etc<br />
+                    <span class="alignright"><a href="#/kitchen?Bonda">More...</a></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

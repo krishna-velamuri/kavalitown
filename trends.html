@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <title>Style and Trends</title>
+	<meta name="keywords" content="leggings, jeggings,color-jeans, handbag, shoes,eyegear, footwear, watches, Gallery">
+	<meta name="description" content="Get handbags gallery, know types of handbags and how to choose leggings, jeggings. choose footwear, watches and diet plans.">
+</head>
+<body>
+    <div class="row row-eq-height">
+        <div id="navigation" class="col-md-2 nopadding1" style="background:#666;">
+            <ul class="top-level">
+                <li>
+                    <a>Western Dress Styles</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('leggings');">Leggings</a></li>
+                        <li><a ng-click="LoadPage('jeggings');">Jeggings</a></li>
+                        <li><a ng-click="LoadPage('color-jeans');"}>Colored jeans</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Hand Bags</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('choose-bag');">Choosing Hand Bag</a></li>
+                        <li><a ng-click="LoadPage('bag-types');">Types of Hand Bags</a></li>
+                        <li><a ng-click="LoadPage('handbag-gallery');">Hand Bags Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Eye gear</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('choose-eyegear');">Choosing Eye Gear</a></li>
+                        <li><a ng-click="LoadPage('eyegear-types');">Types of Eye Gear</a></li>
+                        <li><a ng-click="LoadPage('eyegear-gallery');">Eye Gear Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a ng-click="LoadPage('watches');">Watches</a></li>
+                <li>
+                    <a>Footwear</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('choose-footwear');">Choosing Footwear</a></li>
+                        <li><a ng-click="LoadPage('bag-types');">Types of Footwear</a></li>
+                        <li><a ng-click="LoadPage('handbag-gallery');">Footwear Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Beauty Tips</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('hair-nails');">Hair & Nails</a></li>
+                        <li><a ng-click="LoadPage('eyes-face');">Eyes & Face</a></li>
+                        <li><a ng-click="LoadPage('body-breast');">Body & Breast</a></li>
+                        <li><a ng-click="LoadPage('face-packs');">Face packs</a></li>
+                        <li><a>Natural tips</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Health</a>
+                    <ul class="sub-level">
+                        <li><a>Home Remidies</a></li>
+                        <li><a ng-click="LoadPage('good-food');">Good Food</a></li>
+                        <li><a ng-click="LoadPage('calories');">Calories</a></li>
+                        <li><a>Workouts</a></li>
+                        <li><a ng-click="LoadPage('diet-plans');">Diet Plans</a></li>
+                    </ul>
+                </li>                
+                <li>
+                    <a>Dresses</a>
+                    <ul class="sub-level">
+                        <li><a>Punjabi</a></li>
+                        <li><a>Chudidhar</a></li>
+                        <li><a>Gagra</a></li>
+                        <li><a>Bekka</a></li>
+                        <li><a>Korres</a></li>
+                        <li><a>Livia</a></li>
+                        <li><a>Fimia</a></li>
+                    </ul>
+                </li>
+                <li><a>Sarees</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 nopadding2">
+            <ng-include src="view"></ng-include>
+        </div>
+    </div>
+</body>
+</html>

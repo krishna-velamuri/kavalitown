@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>www.kavalitown.com</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <div id="navigation">
+                <ul class="top-level">                    
+                    <li>
+                        <a>Agriculture</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('fertilizers');">Fertilizers</a></li>
+                            <li><a ng-click="LoadGuide('seeds');">Seeds</a></li>
+                            <li><a ng-click="LoadGuide('agritools');">Tools</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('ATMs')">ATM Centres</a></li>
+                    <li>
+                        <a>AutoMobiles</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('garrage');">Garrages</a></li>
+                            <li><a ng-click="LoadGuide('weiging');">Weigh Bridge</a></li>
+                            <li><a ng-click="LoadGuide('petrol');">Petrol Pumps</a></li>
+                            <li><a ng-click="LoadGuide('autoshow');">Show Rooms</a></li>
+                            <li><a ng-click="LoadGuide('automobile-service');">Automobile Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('banks');">Banks</a></li>
+                    <li><a ng-click="LoadGuide('beauty-parlor');">Beauty parlors</a></li>
+                    <li><a ng-click="LoadGuide('bekary');">Bekaries</a></li>
+                    <li><a ng-click="LoadGuide('catering');">Catering</a></li>
+                    <li><a ng-click="LoadGuide('chit-fund');">Chit Fund</a></li>
+                    <li>
+                        <a>Clothing</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('ready-mades');">Ready Mades</a></li>
+                            <li><a ng-click="LoadGuide('textiles');">Textiles</a></li>
+                            <li><a ng-click="LoadGuide('inner-wear');">Inner Wear</a></li>
+                            <li><a ng-click="LoadGuide('matching-center');">Matching Centers</a></li>
+                            <li><a ng-click="LoadGuide('tailor');">Tailors</a></li>
+                            <li><a ng-click="LoadGuide('drycleaners');">Dry Cleaners</a></li>
+                            <li><a ng-click="LoadGuide('embroidery');">Embroidery Works</a></li>
+                            <li><a ng-click="LoadGuide('thread');">Thread Works</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Colleges</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('inter-colleges');">Intermediate</a></li>
+                            <li><a ng-click="LoadGuide('degree-colleges');">Degree</a></li>
+                            <li><a ng-click="LoadGuide('engineering-colleges');">Engineering</a></li>
+                            <li><a ng-click="LoadGuide('mca-mba-colleges');">MCA/MBA</a></li>
+                            <li><a ng-click="LoadGuide('pg-colleges');">P.G</a></li>
+                            <li><a>B.Ed</a></li>
+                            <li><a>Parmacy</a></li>
+                            <li><a>Nursing</a></li>
+                            <li><a>I.T.I</a></li>
+                            <li><a ng-click="LoadGuide('poly_col.html');">Polytechnic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Construction</a>
+                        <ul class="sub-level">
+                            <li><a>Architects</a></li>
+                            <li><a ng-click="LoadGuide('bricks');">Brick Suppliers</a></li>
+                            <li><a ng-click="LoadGuide('builders');">Builders / Agents</a></li>
+                            <li><a>Engineers</a></li>
+                            <li><a>Gravel & Sand</a></li>
+                            <li><a>Granite & Marble</a></li>
+                            <li><a ng-click="LoadGuide('steelandcement');">Steel & Cement</a></li>
+                            <li><a>Tool Rentals</a></li>
+                            <li><a ng-click="LoadGuide('tiles');">Tiles & Sanitary</a></li>
+                            <li><a ng-click="LoadGuide('welders');">Welding and Grills</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('courier');">Courier and Postal</a></li>
+                    <li><a ng-click="LoadGuide('electricals');">Electricals</a></li>
+                    <li><a ng-click="LoadGuide('electronics');">Electronics</a></li>
+                    <li><a ng-click="LoadGuide('engineering');">Engineering</a></li>
+                    <li>
+                        <a>Entertainment</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('movies');">Cinema Theaters</a></li>
+                            <li><a>Exhibition/Circus</a></li>
+                            <li><a>Sports Clubs</a></li>
+                            <li><a>Parks</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Fine Arts</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('music');">Music</a></li>
+                            <li><a ng-click="LoadGuide('dance');">Dance</a></li>
+                            <li><a>Painting/Arts</a></li>
+                            <li><a>Photography</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('finance');">Finance</a></li>
+                    <li><a ng-click="LoadGuide('function-halls');">Function Halls</a></li>
+                    <li><a ng-click="LoadGuide('fireworks');">Fire Works</a></li>
+                    <li><a ng-click="LoadGuide('furniture');">Furniture</a></li>
+                    <li><a ng-click="LoadGuide('footwear');">Footwear</a></li>
+                    <li><a ng-click="LoadGuide('gas-agencies');">Gas Agencies</a>
+                    <li>
+                        <a>Govt. Services</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('fire-stations');">Fire</a></li>
+                            <li><a ng-click="LoadGuide('police-stations');">Police</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('provisions');">Grocery/Provisions</a></li>
+                    <li><a ng-click="LoadGuide('hardware-shops');">Hardware</a></li>
+                    <li>
+                        <a>HealthCare</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('blood-banks');">Blood banks</a></li>
+                            <li><a ng-click="LoadGuide('hospitals');">Hospitals</a></li>
+                            <li><a ng-click="LoadGuide('medical');">Medicals</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('hirers');">Hirers/Tenthouse</a></li>
+                    <li><a ng-click="LoadGuide('hostels');">Hostels</a></li>
+                    <li><a ng-click="LoadGuide('hotels-restaurants');">Hotels & Restaurants</a></li>
+                    <li>
+                        <a>Home Needs</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('furniture');">Furniture</a></li>
+                            <li><a ng-click="LoadGuide('electricals');">Electrical</a></li>
+                            <li><a ng-click="LoadGuide('electronics');">Electronics</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('jewellery');">Jewellers</a></li>
+                    <li><a ng-click="LoadGuide('lodges');">Lodges</a></li>
+                    <li><a>Mechanics</a></li>
+                    <li><a ng-click="LoadGuide('milk-parlours');">Milk Parlour</a></li>
+                    <li><a ng-click="LoadGuide('mobiles');">Mobile Shops & Service</a></li>
+                    <li>
+                        <a>Multimedia</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('studios');">Advertisement</a></li>
+                            <li><a ng-click="LoadGuide('studios');">Studios</a></li>
+                            <li><a ng-click="LoadGuide('printing');">Print Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('placement');">Placement Services</a></li>
+                    <li><a ng-click="LoadGuide('schools');">Schools</a></li>
+                    <li><a ng-click="LoadGuide('snacks');">Snacks & Chat</a></li>
+                    <li>
+                        <a>Stationary</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('books');">Book Shops</a></li>
+                            <li><a>Paper Marts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Transport</a>
+                        <ul class="sub-level">
+                            <li><a ng-click="LoadGuide('train-timings');">Railway Timings</a></li>
+                            <li><a ng-click="LoadGuide('bus-timings');">Bus Timings</a></li>
+                            <li><a ng-click="LoadGuide('tours-travels');">Tours and Travels</a></li>
+                            <li><a ng-click="LoadGuide('cabs');">Cabs</a></li>
+                            <li><a ng-click="LoadGuide('transport');">Transports</a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="LoadGuide('temples');">Temples</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 nopadding">
+            <ng-include src="view"></ng-include>
+        </div>
+    </div>
+</body>
+</html>

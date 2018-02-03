@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>www.kavalitown.com</title>
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>-->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('.jumbotron-text').css('height',$(document).height());
+        });
+    </script>
+</head>
+<body ng-app="kavaliApp">
+    <div ng-controller="indexController">
+        <div class="container">
+            <div class="title">
+                <p>
+                    <sup><b>Kavali Town</b></sup> <sub>Golden city in future........</sub>
+                </p>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                    <li class="" data-slide-to="1" data-target="#myCarousel"></li>
+                    <li class="" data-slide-to="2" data-target="#myCarousel"></li>
+                    <li class="" data-slide-to="3" data-target="#myCarousel"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/kavali-beach.jpg" alt="Kavali Beach......" style="width:100%;" />
+                    </div>
+                    <div class="item">
+                        <img src="images/kalugolamma-temple.jpg" alt="Kalugolamma Temple...." style="width:100%;" />
+                    </div>
+                    <div class="item">
+                        <img src="images/railway-station.jpg" alt="Railway Station....." style="width:100%;" />
+                    </div>
+                    <div class="item">
+                        <img src="images/alligunta.jpg" alt="Alligunta Palem....." style="width:100%;" />
+                    </div>
+                </div>
+                <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" data-slide="next" href="#myCarousel">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="my-navbar" style="margin-bottom:0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="" class="navbar-brand">Kavali Town</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a href="#/">Home</a></li>
+                            <li><a href="#/kavali">About Kavali</a></li>
+                            <li><a href="#/news">News</a></li>
+                            <li><a href="#/Guide">Local Guide</a></li>                            
+                            <li><a href="#/places">Places</a></li>
+                            <li><a href="#/realestate">Real Estate</a></li>
+                            <li><a href="#/media">Kavali in Media</a></li>
+                            <li><a href="#/advertise">Advertise</a></li>
+                            <li><a href="#/admin">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div ng-view></div>
+        </div>
+        <div class="container">
+            <div class="footer">
+                <div class="row" style="margin-left:3%;">
+                    <div class="col-md-4">
+                        <h3>
+                            Events and Info
+                        </h3>
+                        <p>
+                            <a href="#/events">Events in Kavali</a>, <a href="#development-activities">Development Activities</a>, 
+							<a href="#/kavali-calendar">Kavali Calendar</a>,
+                            <a href="#/phone-numbers">Phone Numbers</a>, <a href="#/govt-ofiices">Govt. Offices</a>,
+							<a href="#/water-sources">Water Sources</a>, <a href="#/ward-members">Ward Members</a>, 
+							<a href="#/street-names">Street Names</a>
+                        </p>
+                    </div>
+                    <dvi class="col-md-4">
+                        <h3>
+                            Kavali Stuff
+                        </h3>
+                        <p>
+                            <a href="#/maps">Kavali Maps</a>, <a href="#/vip">V.I.P's from Kavali
+                            </a>, <a href="#/media">Kavali in media</a>, <a href="#/industries">Industries</a>,<a href="#/old-names">Old Names</a>, 
+							<a href="#/kavali-revenue">Kavali Revenue Info</a>, <a href="#/kavali-assembly">Assembly Info</a>, 
+							<a href="#/nearplaces">Distance from Kavali </a>, <a href="#/kavali-videos">Kavali Videos</a>, <a href="#/kavali-pics">Kavali Pics</a>
+                        </p>
+                    </dvi>
+                    <dvi class="col-md-4">
+                        <h3>
+                            Copy Right
+                        </h3>
+                        <p>
+                            &copy; 2017<a href="#" title="www.KavaliTown.com">www.kavalitown.com</a> All rights
+                            reserved.<br />
+                            To Advertise Here: contact at +91-9071315222<br />
+                            or Mail to: <a href="mailto:admin@kavalitown.com">admin@kavalitown.com</a>
+                        </p>
+                    </dvi>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

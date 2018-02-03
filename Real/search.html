@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <title>Realty Buy, Sale or Rent</title>
+</head>
+<body>
+    <div class="jumbotron-text">
+        <h2>Search</h2>
+        <div class="row row-eq-height">
+            <div class="col-md-7">
+                <div class="well">
+                    <form id="myForm" class="form-horizontal" method="post" ng-submit="Search()">
+                        <fieldset>
+                            <legend>{{realTitle}}</legend>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selNeedType">Property For</label>
+                                <div class="col-lg-8">
+                                    <select name="listedFor" class="form-control" id="selListefFor" required>
+                                        <option value="">Select...</option>
+                                        <option value="Buy">Buy</option>
+                                        <option value="Rent">Rent</option>
+                                        <option value="Lease">Lease</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Locality</label>
+                                <div class="col-lg-8">
+                                    <select name="locality" class="form-control" id="selLocality">
+                                        <option>Select...</option>
+                                        <option>All</option>
+                                        <option>Kavali South</option>
+                                        <option>Kavali North</option>
+                                        <option>Kavali West</option>
+                                        <option>Kavali East</option>
+                                        <option>Amudaladinne</option>
+                                        <option>Arundathiya Nagar</option>
+                                        <option>Bairagi Colony</option>
+                                        <option>Balakrishna reddy Nagar</option>
+                                        <option>Bapuji Nagar</option>
+                                        <option>Bench Court</option>
+                                        <option>Brundavan Colony</option>
+                                        <option>Budamgunta</option>
+                                        <option>Chandrababu Nagar</option>
+                                        <option>Christian Peta</option>
+                                        <option>Co-operative Colony</option>
+                                        <option>Dwarka Nagar</option>
+                                        <option>Gayathri Nagar</option>
+                                        <option>Indira Nagar</option>
+                                        <option>Industrial Estate</option>
+                                        <option>Islam Peta</option>
+                                        <option>Janathapet North</option>
+                                        <option>Janathapet South</option>
+                                        <option>Jonnaigunta</option>
+                                        <option>Kaccherimitta</option>
+                                        <option>Kalugolamma Peta</option>
+                                        <option>Kasayiveedi</option>
+                                        <option>Kasthuri gunta</option>
+                                        <option>Kavilari Gunta</option>
+                                        <option>Koadinne Colony</option>
+                                        <option>Maddurupadu</option>
+                                        <option>Magunta Layout</option>
+                                        <option>Musunuru</option>
+                                        <option>Oldtown</option>
+                                        <option>One rupee Building</option>
+                                        <option>Penkula Factory</option>
+                                        <option>Pullareddy Nagar</option>
+                                        <option>Raghavendra Colony</option>
+                                        <option>Rajiv Nagar</option>
+                                        <option>Rammurthi Peta</option>
+                                        <option>Samadula Thota</option>
+                                        <option>Sangam</option>
+                                        <option>Sankula vari Thota</option>
+                                        <option>Santhi Nagar</option>
+                                        <option>Sapota Thota</option>
+                                        <option>Sarvayapalem</option>
+                                        <option>SriNagar Colony</option>
+                                        <option>Sub Court</option>
+                                        <option>Kesava Nagar</option>
+                                        <option>Teachers Colony</option>
+                                        <option>Thufan Nagar</option>
+                                        <option>Vaddi Palem</option>
+                                        <option>Vaikunta Puram</option>
+                                        <option>Vengaiahgari Palem</option>
+                                        <option>Vengalarao Nagar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selAreaFrom">Area (sqft)</label>
+                                <div class="col-lg-4">
+                                    <select name="areaFrom" class="form-control" id="selAreaFrom">
+                                        <option>Select...</option>
+                                        <option>100</option>
+                                        <option>400</option>
+                                        <option>900</option>
+                                        <option>1400</option>
+                                        <option>2000</option>
+                                        <option>1800</option>
+                                        <option>2500</option>
+                                        <option>3000</option>
+                                        <option>3500</option>
+                                        <option>4000</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <select name="areaTo" class="form-control" id="selAreaTo">
+                                        <option>Select...</option>
+                                        <option>400</option>
+                                        <option>900</option>
+                                        <option>1400</option>
+                                        <option>1800</option>
+                                        <option>2500</option>
+                                        <option>3000</option>
+                                        <option>3500</option>
+                                        <option>4000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selAreaFrom">Price</label>
+                                <div class="col-lg-4">
+                                    <select name="priceFrom" class="form-control" id="selPriceFrom">
+                                        <option>Select...</option>
+                                        <option>100000</option>
+										<option>500000</option>
+										<option>800000</option>
+										<option>1200000</option>
+										<option>1500000</option>
+										<option>2000000</option>
+										<option>2500000</option>
+										<option>3000000</option>
+										<option>4000000</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <select name="priceTo" class="form-control" id="selPriceTo">
+                                        <option>Select...</option>
+										<option>500000</option>
+										<option>800000</option>
+										<option>1200000</option>
+										<option>1500000</option>
+										<option>2000000</option>
+										<option>2500000</option>
+										<option>4000000</option>
+										<option>5000000</option>
+                                    </select>
+                                </div>
+                            </div>                                                        
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">No Brokers</label>
+                                <div class="col-lg-2">
+									<input type="checkbox" name="broker" class="checkbox" id="chkBroker" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12 col-lg-offset-4">
+                                    <input type="submit" id="btnSubmit" value="Search" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        </fieldset>
+						<input type="hidden" name="propertyType" ng-value="propType" id="hdnPropertyType" />
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div id="props"></div>
+    </div>
+</body>
+</html>

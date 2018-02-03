@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <title>kitchen : Recipes</title>
+</head>
+<body>
+    <div class="row row-eq-height">
+        <div id="navigation" class="col-md-2 nopadding1" style="background:#666;">
+            <ul class="top-level">
+                <li>
+                    <a>Breakfast</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('Bonda');">Bonda</a></li>
+                        <li><a ng-click="LoadPage('Kichidi');">Kitchidi</a></li>
+                        <li><a ng-click="LoadPage('Pesarattu');">Pesarattu</a></li>
+                        <li><a ng-click="LoadPage('Pongal');">Pongal</a></li>
+                        <li><a ng-click="LoadPage('RavvaDosa');">Ravva Dosa</a></li>
+                        <li><a ng-click="LoadPage('SemiyaUpma');">Semiya Upma</a></li>
+                        <li><a ng-click="LoadPage('VegitableIdli');">Vegitable Idli</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Cakes and Desserts</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('AttaLaddo');">Atta Laddo</a></li>
+                        <li><a ng-click="LoadPage('BananaMuffins');">Banana Muffins</a></li>
+                        <li><a ng-click="LoadPage('BenarasiKheer');">Benarasi Kheer</a></li>
+                        <li><a ng-click="LoadPage('Butterscotch');">Butterscotch Pasty</a></li>
+                        <li><a ng-click="LoadPage('ChocolateCake');">Chocolate Cake</a></li>
+                        <li><a ng-click="LoadPage('ChocolateMousse');">Chocolate Mousse</a></li>
+                        <li><a ng-click="LoadPage('CoconutBurfi');">Coconut Burfi</a></li>
+                        <li><a ng-click="LoadPage('EgglessChocolateCake');">Eggless Chocolate</a></li>
+                        <li><a ng-click="LoadPage('GajarkaHalwa');">Gajar ka Halwa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Chinese</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('Chowmein');">Chowmein</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Chutnies</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('CoconutChutney');">Coconut Chutney</a></li>
+                        <li><a ng-click="LoadPage('TamotaChutney');">Tomato Chutney</a></li>
+                        <li><a ng-click="LoadPage('PudinaChutney');">Pudeena Chutney</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Continental</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('ChickenLasagne');">Chicken Lasagne</a></li>
+                        <li><a ng-click="LoadPage('PastainSauce');">Pasta in Tomao Sauce</a></li>
+                        <li><a ng-click="LoadPage('ChickenPotato');">Chicken Potato pie</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Curries</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('BengaliFish');">Bengali Fish Curry</a></li>
+                        <li><a ng-click="LoadPage('ButterChicken');">Butter Chicken</a></li>
+                        <li><a ng-click="LoadPage('PalakMakai');">Palak Makai</a></li>
+                        <li><a ng-click="LoadPage('PaneerMakhani');">Paneer Makhani</a></li>
+                        <li><a ng-click="LoadPage('KadhiPakora');">Kadhi Pakora</a></li>
+                        <li><a ng-click="LoadPage('Salan');">Salan Curry</a></li>
+                        <li><a ng-click="LoadPage('Sambar');">Sambar</a></li>
+                        <li><a ng-click="LoadPage('Shabnam');">Shabnam Curry</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Dry & Semi Dry</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('Avial');">Avial</a></li>
+                        <li><a ng-click="LoadPage('AchaariBhindi');">Achaari bhindi</a></li>
+                        <li><a ng-click="LoadPage('BainganBharta');">Baingan Bharta</a></li>
+                        <li><a ng-click="LoadPage('dumalooposto');">Dum aloo Posto</a></li>
+                        <li><a ng-click="LoadPage('KeemaPalak');">Keema Palak</a></li>
+                        <li><a ng-click="LoadPage('MethiChicken');">Methi Chicken</a></li>
+                        <li><a ng-click="LoadPage('MurgJalfrezi');">Murg Jalfrezi</a></li>
+                        <li><a ng-click="LoadPage('SukhiDhuli');">Sukhi Dhuli</a></li>
+                    </ul>
+                </li>
+                <li><a>Others</a></li>
+                <li>
+                    <a>Rice Dishes</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('MurgPulao');">Murg Pulao</a></li>
+                        <li><a ng-click="LoadPage('SubzPulao');">Subz Pulao</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Snacks</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('AlooTikki');">Aloo Tikki</a></li>
+                        <li><a ng-click="LoadPage('ChickenCroquettes');">Chicken Croquettes</a></li>
+                        <li><a ng-click="LoadPage('ChickenPizza');">Chicken Pizza</a></li>
+                        <li><a ng-click="LoadPage('ChilliPrawns');">Chilli Prawns</a></li>
+                        <li><a ng-click="LoadPage('CornUpma');">Corn Upma</a></li>
+                        <li><a ng-click="LoadPage('CrispyChicken');">Crispy Chicken</a></li>
+                        <li><a ng-click="LoadPage('DhaniaMachhi');">Dhania Machhi</a></li>
+                        <li><a ng-click="LoadPage('MeatPockets');">Meat Pockets</a></li>
+                        <li><a ng-click="LoadPage('KhamanDhokla');">Khaman Dhokla</a></li>
+                        <li><a ng-click="LoadPage('PavBhaji');">Pav Bhaji</a></li>
+                        <li><a ng-click="LoadPage('VegPizza');">Veggi Pizza</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Soups and Drinks</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('AamPanna');">Aam Panna</a></li>
+                        <li><a ng-click="LoadPage('ChickenSoup');">Chicken hot Soup</a></li>
+                        <li><a ng-click="LoadPage('MashroomSoup');">Mashroom Soup</a></li>
+                        <li><a ng-click="LoadPage('SweetCorn');">Sweet Corn Soup</a></li>
+                        <li><a ng-click="LoadPage('TomatoRasam');">Tomato Rasam</a></li>
+                        <li><a ng-click="LoadPage('VegitableSoup');">Vegitable Soup</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Tandoor</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('ArbiTandoori');">Arbi Tandoori</a></li>
+                        <li><a ng-click="LoadPage('BadaamiTangri');">Badaami Tangri</a></li>
+                        <li><a ng-click="LoadPage('ChickenTikka');">Chicken Tikka</a></li>
+                        <li><a ng-click="LoadPage('FishTikka');">Fish Tikka</a></li>
+                        <li><a ng-click="LoadPage('MalaiKhumb');">Malai Khumb</a></li>
+                        <li><a ng-click="LoadPage('PaneerTikka');">Paneer Tikka</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Thai</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('SweetSourVeg');">Sweet & Sour Veggi</a></li>
+                        <li><a ng-click="LoadPage('RedCurry');">Thai Red Curry</a></li>
+                        <li><a ng-click="LoadPage('GreenCurry');">Thai Green Curry</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Andhra Special</a>
+                    <ul class="sub-level">
+                        <li><a ng-click="LoadPage('SweetSourVeg');">Natu Kodi Pulusu</a></li>
+                        <li><a ng-click="LoadPage('RedCurry');">Mutton Gongura</a></li>
+                        <li><a ng-click="LoadPage('GreenCurry');">Chepala Pulusu</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10 nopadding2">
+            <ng-include src="view"></ng-include>
+        </div>
+    </div>
+</body>
+</html>

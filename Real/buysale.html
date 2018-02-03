@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <title>Realty Buy, Sale or Rent</title>
+</head>
+<body>
+    <div class="jumbotron-text">
+        <h2>Post Here</h2>
+        <div class="row row-eq-height">
+            <div class="col-md-7">
+                <div class="well">
+                    <form id="myForm" class="form-horizontal" method="post" ng-submit="Post()">
+                        <fieldset>
+                            <legend>{{realTitle}}</legend>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="txtTitle">Title</label>
+                                <div class="col-lg-8">
+                                    <input name="title" class="form-control" id="txtTitle" type="text" placeholder="Enter title.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label"> I am</label>
+                                <div class="col-lg-2">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" checked="" value="Owner" name="postedBy">
+                                            Owner
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" checked="" value="Delaer" name="postedBy">
+                                            Dealer
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selNeedType">List Property For</label>
+                                <div class="col-lg-8">
+                                    <select name="listedFor" class="form-control" id="selListedFor" required>
+                                        <option value="">Select...</option>
+                                        <option value="Sale">Sale</option>
+                                        <option value="Rent">Rent</option>
+                                        <option value="Lease">Lease</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selLocality">Locality</label>
+                                <div class="col-lg-8">
+                                    <select name="locality" class="form-control" id="selLocality">
+                                        <option>Select...</option>
+                                        <option>All</option>
+                                        <option>Kavali South</option>
+                                        <option>Kavali North</option>
+                                        <option>Kavali West</option>
+                                        <option>Kavali East</option>
+                                        <option>Amudaladinne</option>
+                                        <option>Arundathiya Nagar</option>
+                                        <option>Bairagi Colony</option>
+                                        <option>Balakrishna reddy Nagar</option>
+                                        <option>Bapuji Nagar</option>
+                                        <option>Bench Court</option>
+                                        <option>Brundavan Colony</option>
+                                        <option>Budamgunta</option>
+                                        <option>Chandrababu Nagar</option>
+                                        <option>Christian Peta</option>
+                                        <option>Co-operative Colony</option>
+                                        <option>Dwarka Nagar</option>
+                                        <option>Gayathri Nagar</option>
+                                        <option>Indira Nagar</option>
+                                        <option>Industrial Estate</option>
+                                        <option>Islam Peta</option>
+                                        <option>Janathapet North</option>
+                                        <option>Janathapet South</option>
+                                        <option>Jonnaigunta</option>
+                                        <option>Kaccherimitta</option>
+                                        <option>Kalugolamma Peta</option>
+                                        <option>Kasayiveedi</option>
+                                        <option>Kasthuri gunta</option>
+                                        <option>Kavilari Gunta</option>
+                                        <option>Koadinne Colony</option>
+                                        <option>Maddurupadu</option>
+                                        <option>Magunta Layout</option>
+                                        <option>Musunuru</option>
+                                        <option>Oldtown</option>
+                                        <option>One rupee Building</option>
+                                        <option>Penkula Factory</option>
+                                        <option>Pullareddy Nagar</option>
+                                        <option>Raghavendra Colony</option>
+                                        <option>Rajiv Nagar</option>
+                                        <option>Rammurthi Peta</option>
+                                        <option>Samadula Thota</option>
+                                        <option>Sangam</option>
+                                        <option>Sankula vari Thota</option>
+                                        <option>Santhi Nagar</option>
+                                        <option>Sapota Thota</option>
+                                        <option>Sarvayapalem</option>
+                                        <option>SriNagar Colony</option>
+                                        <option>Sub Court</option>
+                                        <option>Kesava Nagar</option>
+                                        <option>Teachers Colony</option>
+                                        <option>Thufan Nagar</option>
+                                        <option>Vaddi Palem</option>
+                                        <option>Vaikunta Puram</option>
+                                        <option>Vengaiahgari Palem</option>
+                                        <option>Vengalarao Nagar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selAreaFrom">Area (sqft)</label>
+                                <div class="col-lg-8">
+                                    <input name="area" class="form-control" type="text" id="txtArea" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selPriceFrom">Price</label>
+                                <div class="col-lg-8">
+                                    <input name="price" class="form-control" type="text" id="txtPrice" />
+                                </div>                                
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label" for="selPropertyAge">Property Age (in Years)</label>
+                                <div class="col-lg-8">
+									<input name="propertyAge" class="form-control" type="text" id="txtPropertyAge" />
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="col-lg-4 control-label" for="textArea">Desscription</label>
+                                <div class="col-lg-8">
+                                    <textarea name="description" rows="3" class="form-control" id="txtDescription" required></textarea>
+                                </div>
+                            </div>                            
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label"></label>
+                                <div class="col-lg-8">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Name</label>
+                                <div class="col-lg-8">
+                                    <input name="name" class="form-control" id="txtName" type="text" placeholder="Enter Name.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Contat Number</label>
+                                <div class="col-lg-8">
+                                    <input name="contact" class="form-control" id="txtContact" type="text" placeholder="Enter contact number.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12 col-lg-offset-4">
+                                    <input type="submit" id="btnSubmit" value="Submit" class="btn btn-primary" />
+                                    <input type="reset" id="btnReset" value="Clear" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </fieldset>
+						<input type="hidden" name="propertyType" id="hdnPropertyType" ng-value="propType" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

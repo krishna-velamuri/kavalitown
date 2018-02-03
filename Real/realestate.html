@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Real Estate in Kavali</title>
+</head>
+<body>
+    <div class="row row-eq-height">
+        <div class="col-md-2">
+            <nav id="sidebar" class="navbar-default navbar-static-side" data-position="right" role="navigation" data-step="2" style="min-height:100%;">
+                <div class="sidebar-collapse menu-scroll">
+                    <ul id="side-menu" class="nav">
+                        <li class="active"><a>Apartments</a></li>
+                        <li><a ng-click="LoadReal('buysale');GetTitle('Flats','Sale');">Post Flats</a></li>
+                        <li><a ng-click="LoadReal('prices_apt');">Prices</a></li>
+                        <li><a ng-click="LoadReal('search');GetTitle('Flats','Search');">Search Flats</a></li>
+                        <li><a ng-click="LoadReal('builders');">Builders & Agents</a></li>
+                        <li class="active"><a>Indipendent Houses</a></li>
+                        <li><a ng-click="LoadReal('buysale');GetTitle('Houses','Sale');">Post House/Villa</a></li>
+                        <li><a ng-click="LoadReal('prices-ind');">Prices</a></li>
+                        <li><a ng-click="LoadReal('search');GetTitle('Houses','Search');">Search House</a></li>
+                        <li class="active"><a>Plots</a></li>
+                        <li><a ng-click="LoadReal('buysale');GetTitle('Plots','Sale');">Post Plots</a></li>
+                        <li><a ng-click="LoadReal('plot-venture');">Venture</a></li>
+                        <li><a ng-click="LoadReal('prices_plt');">Prices</a></li>
+                        <li><a ng-click="LoadReal('search');GetTitle('Plots','Search');">Search Plots</a></li>
+                        <li class="active"><a>Other Info</a></li>
+                        <li><a>Consultants</a></li>
+                        <li><a ng-click="LoadReal('registration-fee');">Registratio Fee</a></li>
+						<li><a ng-click="LoadReal('land-value');">Land Value</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-10 nopadding">
+            <ng-include src="view1"></ng-include>
+        </div>
+    </div>
+</body>
+</html>

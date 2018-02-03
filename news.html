@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="kavali,town, municipality, nellore, kanakaptnam, kaavali,kalugolamma, krishna velamuri,oldtown, ramayapatnam, port, thummalapenta, beach,prathapa reddy, rajanala, cinema, potti sri ramulu" />
+    <meat name="description" content="kavali town is a big municipality in nellore district. Kavali municipality is formed in 1967." />
+    <title>Kavali Town News</title>
+</head>
+<body>
+    <div class="jumbotron-text">
+        <div>
+            <h3><a href="News/2015/12/22.html#dengue">కావలి డివిజన్లో డెంగ్యు, మలేరియా ఉదృతి</a></h3>
+            <p>
+                కావలి డివిజన్లో డెంగ్యు, మలేరియా ఉదృతి ఎక్కువగా ఉంది. కావలి పట్టణంలో పారిశుధ్యం దారుణంగా వుండటంతో దోమలు విపరీతంగా పెరిగి అనేక రకాల అనారోగ్యాలకు కారణమవుతున్నాయి.
+            </p>
+        </div>
+        <div>
+            <h3><a href="News/2015/12/22.html#jagan">కావలిలో జగన్ జన్మదిన వేడుకులు..</a></h3>
+            <p>
+                వై.యస్.ఆర్.సి.పి నాయకుడు వై.యస్ జగన్ మోహన్ రెడ్డి జన్మదినోత్సవం సంధర్భముగా సోమవారం కావలి లోని వై.కా.పా కార్యాలయంలో భారీ కేక్...........
+            </p>
+        </div>
+		<?php 
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$dbname = "KavaliNews";
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+		$sql = "SELECT * FROM posts";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+			// output data of each row
+			while($row = $result->fetch_assoc()) {
+				echo "id: " . $row["title"]. " - Name: " . $row["description"]. " <br/>" . $row["news"]. "<br>";
+			}
+		} else {
+			echo "0 results";
+		}
+		$conn->close();
+	?>
+    </div>
+</body>
+</html>
