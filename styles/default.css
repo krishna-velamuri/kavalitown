@@ -383,3 +383,8 @@ label
 {
 	font-weight:normal !important;
 }
+@media(max-width:992px) {
+	.container-full-and-fluid {
+		padding:0px !important;
+	}
+}	
