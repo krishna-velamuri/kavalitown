@@ -193,10 +193,6 @@ img.alignright
 	position:relative;
 	display:none;
 }
-.places>li>img 
-{
-    max-width:100%;
-}
 #places-info ul>li:first-child
 {
     display:list-item;
@@ -224,7 +220,7 @@ img.alignright
 	cursor:pointer;
 	background:url(../images/next.png) no-repeat;
 }
-.places img{text-align:center;margin-left:6.5%;border:10px solid #F1F1F1;}
+.places img{text-align:center;margin-left:3%;border:10px solid #F1F1F1;max-width:100%;}
 .place-desc
 {
     margin-left:5%;
