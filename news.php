@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="kavali,town, municipality, nellore, kanakaptnam, kaavali,kalugolamma, krishna velamuri,oldtown, ramayapatnam, port, thummalapenta, beach,prathapa reddy, rajanala, cinema, potti sri ramulu" />

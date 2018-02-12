@@ -1,229 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meat name="description" content="" />
     <title>Registration Fee</title>
 </head>
 <body>
-	<div class="jumbotron-text">
-		<div>
-			Registration Fee: <select ng-model="fee">
-				<option selected value>--Select--</option>
-				<option value="cat1">Category 1</option>
-				<option value="cat2">Category 2</option>
-				<option value="cat3">Category 3</option>
-				<option value="cat4">Category 4</option>
-			</select>
-			<p></p>
-		</div>
-		<div style="color:#333300;">
-			<i>
-				Note : Effected date from 01.09.2013<br/>
-				The value taken for charging stamp duty shall be the value for Registration fee.
-			</i>
-		</div>
-		<div class="animate-switch-container" ng-switch on="fee">
-			<div class="animate-switch" ng-switch-default>
-				<table class="table table-bordered">
-					<tr>
-						<th>No.</th>
-						<th>Description of instrument</th>
-						<th>Registration Fee</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Sale</td>
-						<td>0.5 %</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Gift</td>
-						<td>0.5 % (Subject to a minimum of Rs.1000/- and maximum of Rs.10,000/-)</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Settlement</td>
-						<td>0.5% (subject to a minimum of Rs.1000/- and maximum of Rs.10,000/-)</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Exchange</td>
-						<td>0.5 %</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>Agreement of Sale cum General Power of Attorney</td>
-						<td>Rs.2000/-</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>Development Agreement cum General Power of Attorney</td>
-						<td>0.5 % (Subject to a maximum of Rs.20,000/-)</td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td>Release</td>
-						<td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.10,000/-)</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>Power of Attorney for Consideration</td>
-						<td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td>Power of attorney given to sell / construct / develop / transfer of immovable property</td>
-						<td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>Agreement to sell / construct / develop of immovable property</td>
-						<td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
-					</tr>
-					<tr>
-						<td>11</td>
-						<td>Certificate of sale</td>
-						<td>0.5%</td>
-					</tr>
-					<tr>
-						<td>12</td>
-						<td>Decree</td>
-						<td>0.5%</td>
-					</tr>
-					<tr>
-						<td>13</td>
-						<td>Conveyance</td>
-						<td>0.5%</td>
-					</tr>
-					<tr>
-						<td>14</td>
-						<td>Paripassu Charge</td>
-						<td>0.5%</td>
-					</tr>
-				</table>
-			</div>
-			<div class="animate-switch" ng-switch-when="cat2">
-				<table class="table table-bordered">
-					<tr>
-						<th>No.</th>
-						<th>Description of instrument</th>
-						<th>Registration Fee</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Lease</td>
-						<td>0.1%</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>License</td>
-						<td>0.1%</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Mortgage</td>
-						<td>0.1%</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Deposit of Title Deeds</td>
-						<td>0.1% (subject to a maximum of Rs.10,000/-)</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>Release of Deposit of Title Deeds</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-				</table>
-			</div>
-			<div class="animate-switch" ng-switch-when="cat3">
-				<table class="table table-bordered">
-					<tr>
-						<th>No.</th>
-						<th>Description of instrument</th>
-						<th>Registration Fee</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Agreement relating to Pawn / Pledge / Hypothecation of Movable property / Machinery / Material / Stock</td>
-						<td>0.5% (subject to a minimum of Rs.1,000/- and maximum of Rs.5,000/-)</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Partition / Award directing partition</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Rectification / Ratification / Cancellation of any Deed</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Attestation of Special Power of Attorney</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>General Power of Attorney other than sale</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>Private Attendance</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td>Registration of Documents on Holiday</td>
-						<td>Rs.5,000/-</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>Will Enquiry or Authority to adopt</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td>Deposit of Sealed Cover / Opening of Sealed Cover of Wills</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>In case of all other documents where the transaction is not susceptible of money valuation</td>
-						<td>Rs.1,000/-</td>
-					</tr>
-				</table>
-			</div>
-			<div class="animate-switch" ng-switch-when="cat4">
-				<table class="table table-bordered">
-					<tr>
-						<td colspan="3">All other categories of documents which are not covered in the category (1), (2) and (3): The Registration Fee is Rs. 500/- per document.<br />
-							<br />
-							Further, the following fees are prescribed for issue of certified copies of documents as well as Encumbrance Certificate:
-						</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Conducting search and issue of certified copy</td>
-						<td>Rs.200/- per certificate</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td colspan="2">Conducting search and issue of Encumbrance Certificates</td>
-					</tr>
-					<tr>
-						<td>a</td>
-						<td>upto 30 years</td>
-						<td>Rs.200/- per certificate</td>
-					</tr>
-					<tr>
-						<td>b</td>
-						<td>More than 30 years</td>
-						<td>Rs.500/- per certificate</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>	
+    <div class="jumbotron-text">
+        <div>
+            Registration Fee: <select ng-model="fee">
+                <option selected value>--Select--</option>
+                <option value="cat1">Category 1</option>
+                <option value="cat2">Category 2</option>
+                <option value="cat3">Category 3</option>
+                <option value="cat4">Category 4</option>
+            </select>
+            <p></p>
+        </div>
+        <div style="color:#333300;">
+            <i>
+                Note : Effected date from 01.09.2013<br />
+                The value taken for charging stamp duty shall be the value for Registration fee.
+            </i>
+        </div>
+        <div class="animate-switch-container" ng-switch on="fee">
+            <div class="animate-switch" ng-switch-default>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>No.</th>
+                        <th>Description of instrument</th>
+                        <th>Registration Fee</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sale</td>
+                        <td>0.5 %</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gift</td>
+                        <td>0.5 % (Subject to a minimum of Rs.1000/- and maximum of Rs.10,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Settlement</td>
+                        <td>0.5% (subject to a minimum of Rs.1000/- and maximum of Rs.10,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Exchange</td>
+                        <td>0.5 %</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Agreement of Sale cum General Power of Attorney</td>
+                        <td>Rs.2000/-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Development Agreement cum General Power of Attorney</td>
+                        <td>0.5 % (Subject to a maximum of Rs.20,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Release</td>
+                        <td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.10,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Power of Attorney for Consideration</td>
+                        <td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Power of attorney given to sell / construct / develop / transfer of immovable property</td>
+                        <td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Agreement to sell / construct / develop of immovable property</td>
+                        <td>0.5% (subject to a minimum of Rs.1,000/-and maximum of Rs.20,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Certificate of sale</td>
+                        <td>0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Decree</td>
+                        <td>0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Conveyance</td>
+                        <td>0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Paripassu Charge</td>
+                        <td>0.5%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="animate-switch" ng-switch-when="cat2">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>No.</th>
+                        <th>Description of instrument</th>
+                        <th>Registration Fee</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Lease</td>
+                        <td>0.1%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>License</td>
+                        <td>0.1%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mortgage</td>
+                        <td>0.1%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Deposit of Title Deeds</td>
+                        <td>0.1% (subject to a maximum of Rs.10,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Release of Deposit of Title Deeds</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="animate-switch" ng-switch-when="cat3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>No.</th>
+                        <th>Description of instrument</th>
+                        <th>Registration Fee</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Agreement relating to Pawn / Pledge / Hypothecation of Movable property / Machinery / Material / Stock</td>
+                        <td>0.5% (subject to a minimum of Rs.1,000/- and maximum of Rs.5,000/-)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Partition / Award directing partition</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rectification / Ratification / Cancellation of any Deed</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Attestation of Special Power of Attorney</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>General Power of Attorney other than sale</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Private Attendance</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Registration of Documents on Holiday</td>
+                        <td>Rs.5,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Will Enquiry or Authority to adopt</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Deposit of Sealed Cover / Opening of Sealed Cover of Wills</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>In case of all other documents where the transaction is not susceptible of money valuation</td>
+                        <td>Rs.1,000/-</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="animate-switch" ng-switch-when="cat4">
+                <table class="table table-bordered">
+                    <tr>
+                        <td colspan="3">
+                            All other categories of documents which are not covered in the category (1), (2) and (3): The Registration Fee is Rs. 500/- per document.<br />
+                            <br />
+                            Further, the following fees are prescribed for issue of certified copies of documents as well as Encumbrance Certificate:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Conducting search and issue of certified copy</td>
+                        <td>Rs.200/- per certificate</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">Conducting search and issue of Encumbrance Certificates</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>upto 30 years</td>
+                        <td>Rs.200/- per certificate</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>More than 30 years</td>
+                        <td>Rs.500/- per certificate</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
