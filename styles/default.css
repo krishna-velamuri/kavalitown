@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: circleBook;
-    src: url(./fonts/CircularStd-Book.otf);
+    src: url(../fonts/CircularStd-Book.otf);
 }
 .title {
     height: 17px;
