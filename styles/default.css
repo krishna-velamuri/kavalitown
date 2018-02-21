@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-
+@font-face {
+    font-family: circleBook;
+    src: url(./fonts/CircularStd-Book.otf);
+}
 .title {
     height: 17px;
     width: 30%;
@@ -24,6 +27,7 @@
     -moz-border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
     overflow: hidden; /*border-radius:0px 0px 20px 20px;*/
+    font-family:circleBook;
 }
     /* columns */
     .content ul.column {
