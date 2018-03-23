@@ -1,9 +1,10 @@
 <?php
-$connectionInfo = array("UID" => "anupama.krishna@kavali", "pwd" => "kavali@1db", "Database" => "kavalinews", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:kavali.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
-
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
+try {
+    $conn = new PDO("sqlsrv:server = tcp:kavali.database.windows.net,1433; Database = kavalinews", "anupama.krishna", "kavali@1db");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
 }
 ?>
